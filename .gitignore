@@ -1,0 +1,20 @@
+# 虛擬環境
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# IDE / 系統
+.idea/
+.vscode/
+.DS_Store
+
+# Django/其他
+*.sqlite3-journal
+staticfiles/
+media/
+
+# 環境變數與祕鑰
+.env

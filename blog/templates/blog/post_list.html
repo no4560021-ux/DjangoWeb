@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <title>文章列表</title>
+</head>
+<body>
+  <h1>文章列表</h1>
+  <ul>
+    {% for p in posts %}
+      <li>
+        <a href="{% url 'post_detail' p.pk %}">{{ p.title }}</a>
+        <small>（{{ p.created_at }}）</small>
+      </li>
+    {% empty %}
+      <li>目前沒有文章</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
+

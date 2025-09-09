@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <title>刪除文章</title>
+</head>
+<body>
+  <h1>確定刪除：{{ post.title }}？</h1>
+  <form method="post">
+    {% csrf_token %}
+    <button type="submit">確定刪除</button>
+    <a href="{% url 'post_detail' post.pk %}">取消</a>
+  </form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <title>{{ post.title }}</title>
+</head>
+<body>
+  <p><a href="{% url 'post_list' %}">← 返回列表</a></p>
+  <h1>{{ post.title }}</h1>
+  <p>{{ post.content|linebreaks }}</p>
+  <hr>
+  <small>建立於：{{ post.created_at }}</small>
+</body>
+</html>
